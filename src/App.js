@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { CssBaseline } from "@mui/material";
+import SideBar from "./scenes/Global/sideBar/SideBar";
+import TopBar from "./scenes/Global/topBar/TopBar";
+import Dashboard from "./scenes/dashboard/Dashboard";
+import CustomerPage from "./scenes/customer-page/CustomerPage";
+import LoanRequestPage from "./scenes/loans/LoanRequestPage";
+import ActivitySummary from "./scenes/customer-page/ActivitySummary";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CssBaseline>
+      <div className="app">
+        <SideBar />
+        <main className="content">
+          <TopBar />
+          <ActivitySummary />
+        </main>
+      </div>
+    </CssBaseline>
   );
 }
 
