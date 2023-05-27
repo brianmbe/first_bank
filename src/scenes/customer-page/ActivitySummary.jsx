@@ -6,6 +6,7 @@ import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
 import WaterDamageOutlinedIcon from "@mui/icons-material/WaterDamageOutlined";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
+import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import { Balance } from "@mui/icons-material";
 
 export default function ActivitySummary() {
@@ -395,6 +396,24 @@ export default function ActivitySummary() {
                     Calendar
                   </Typography>
                 </Box>
+
+                {/* Calendar */}
+                <Card sx={{ bgcolor: "#888", color: "white" }}>
+                  <CardHeader
+                    title={<Typography>Your daily activities</Typography>}
+                    action={
+                      <IconButton>
+                        <CalendarMonthOutlinedIcon color="#fff" />
+                      </IconButton>
+                    }
+                  />
+                  <CardMedia
+                    component="img"
+                    height="250"
+                    image="../../calendar_2023.jpg"
+                    alt="Paella dish"
+                  />
+                </Card>
               </CardContent>
             </Card>
           </Grid>
