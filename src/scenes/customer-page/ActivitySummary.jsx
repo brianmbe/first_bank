@@ -7,14 +7,20 @@ import WaterDamageOutlinedIcon from "@mui/icons-material/WaterDamageOutlined";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 import EditNoteOutlinedIcon from "@mui/icons-material/EditNoteOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
+import AdjustOutlinedIcon from "@mui/icons-material/AdjustOutlined";
+import RadioButtonCheckedOutlinedIcon from "@mui/icons-material/RadioButtonCheckedOutlined";
+import FiberManualRecordOutlinedIcon from "@mui/icons-material/FiberManualRecordOutlined";
+import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
+import PaidOutlinedIcon from "@mui/icons-material/PaidOutlined";
 import { Balance } from "@mui/icons-material";
 
 export default function ActivitySummary() {
   return (
     <Box bgcolor="#E5E5E5">
       <Box m="0 20px">
+        {/* Most paid for services from your account */}
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={9}>
+          <Grid item xs={12} sm={9} height="100%">
             <Box>
               <Typography
                 component="h1"
@@ -290,7 +296,7 @@ export default function ActivitySummary() {
           </Grid>
 
           {/* Profile */}
-          <Grid item xs={12} sm={3}>
+          <Grid item xs={12} sm={3} height="100%">
             <Card>
               <CardHeader
                 title={
@@ -338,7 +344,7 @@ export default function ActivitySummary() {
                     border: "2px solid #fff",
                   }}
                 />
-                <Box sx={{ position: "relative", top: "-60px", left: "70px" }}>
+                <Box sx={{ position: "relative", top: "-30px", left: "20px" }}>
                   <Typography variant="h6" component="h4" fontWeight="bold">
                     Mr. Brian
                   </Typography>
@@ -347,37 +353,37 @@ export default function ActivitySummary() {
               </Box>
 
               <CardContent>
-                <Box>
-                  <Box
-                    bgcolor="#000"
-                    color="#fff"
-                    pl="10px"
-                    borderRadius="10px"
+                <Card>
+                  <CardContent
+                    sx={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <Typography>Acc. bal.</Typography>
-                    <Typography>UGX. 35,670000</Typography>
-                  </Box>
-                  <Box
-                    bgcolor="#000"
-                    color="#fff"
-                    pl="10px"
-                    mt="10px"
-                    borderRadius="10px"
-                  >
-                    <Typography>Interest Accumulator</Typography>
-                    <Typography>UGX. 19,557,000</Typography>
-                  </Box>
-                  <Box
-                    bgcolor="#000"
-                    color="#fff"
-                    pl="10px"
-                    borderRadius="10px"
-                    mt="10px"
-                  >
-                    <Typography>Loan Status</Typography>
-                    <Typography>Not Active</Typography>
-                  </Box>
-                </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Avatar sx={{ bgcolor: "#ed6c02", color: "#fff" }}>
+                        <PaidOutlinedIcon />
+                      </Avatar>
+                      <Typography>UGX. 35,670000</Typography>
+                    </Box>
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Avatar sx={{ bgcolor: "#ed6c02", color: "#fff" }}>
+                        <AccountBalanceWalletOutlinedIcon />
+                      </Avatar>
+                      <Typography>No Active Loan</Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
 
                 <Box display="flex" alignContent="center" mt="30px">
                   <Box
@@ -413,6 +419,47 @@ export default function ActivitySummary() {
                     image="../../calendar_2023.jpg"
                     alt="Paella dish"
                   />
+                </Card>
+
+                {/* My scheduled payments */}
+                <Box display="flex" alignContent="center" mt="30px">
+                  <Box
+                    sx={{
+                      height: "30px",
+                      width: "5px",
+                      bgcolor: "black",
+                      borderRadius: "10px",
+                    }}
+                  />
+                  <Typography
+                    variant="h6"
+                    fontWeight="bold"
+                    sx={{ mb: 2, ml: 2 }}
+                  >
+                    My Scheduled Payments
+                  </Typography>
+                </Box>
+
+                {/* Payment is soon approaching */}
+                <Card>
+                  <CardContent sx={{ display: "flex" }}>
+                    <RadioButtonCheckedOutlinedIcon sx={{ color: "blue" }} />
+                    <Box pl="10px">
+                      <Typography fontWeight="bold">Netflix</Typography>
+                      <Typography>31.07.2023 at 12:00am</Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+
+                {/* next upcoming approaching */}
+                <Card sx={{ mt: "10px" }}>
+                  <CardContent sx={{ display: "flex" }}>
+                    <FiberManualRecordOutlinedIcon />
+                    <Box pl="10px">
+                      <Typography fontWeight="bold">Gym</Typography>
+                      <Typography>15.08.2023</Typography>
+                    </Box>
+                  </CardContent>
                 </Card>
               </CardContent>
             </Card>
