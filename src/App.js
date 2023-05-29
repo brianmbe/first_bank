@@ -5,6 +5,7 @@ import Dashboard from "./scenes/dashboard/Dashboard";
 import CustomerPage from "./scenes/customer-page/CustomerPage";
 import LoanRequestPage from "./scenes/loans/LoanRequestPage";
 import ActivitySummary from "./scenes/customer-page/ActivitySummary";
+import Settings from "./scenes/settings/Settings";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <SideBar />
         <main className="content">
           <TopBar />
-          <ActivitySummary />
+          <Settings />
         </main>
       </div>
     </CssBaseline>

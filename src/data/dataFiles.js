@@ -10,7 +10,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
 
-// Create an array of objects
+// Upcoming objects
 export const upcomingTransactions = [
   {
     title: "Dstv",
