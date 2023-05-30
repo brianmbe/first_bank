@@ -4,7 +4,7 @@ import { Box, Typography, Grid, Card, Container, CardContent } from "@mui/materi
 // prettier-ignore
 import { Sidebar, Menu, MenuItem, SubMenu, sidebarClasses, menuClasses} from "react-pro-sidebar";
 
-import { Notifications } from "./index";
+import { Notifications, ProfileSettings } from "./index";
 
 // Icons
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
@@ -39,7 +39,7 @@ export default function Settings() {
             }}
             style={{
               position: "relative",
-              height: "90vh",
+              height: "100vh",
             }}
           >
             <Menu
@@ -52,17 +52,17 @@ export default function Settings() {
                       ":hover": {
                         color: "#fff",
                         backgroundColor: "#001E3D",
-                        transition: "all 1s ease-out",
+                        transition: "all ease-in",
                       },
                     };
                   if (level === 1)
                     return {
                       color: active ? "#fff" : "#000",
-                      backgroundColor: active ? "#000" : undefined,
+                      backgroundColor: active ? "#2A474B" : undefined,
                       ":hover": {
                         color: "#fff",
-                        backgroundColor: "#2A474B",
-                        transition: "all 1s ease-out",
+                        backgroundColor: "#133337",
+                        transition: "all ease-in",
                       },
                     };
                 },
@@ -185,7 +185,7 @@ export default function Settings() {
         </Grid>
         {/* Main content */}
         <Grid item xs={12} sm={9.8}>
-          <Notifications />
+          <ProfileSettings />
         </Grid>
       </Grid>
     </Box>

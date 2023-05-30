@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "./index";
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
-import { notificationsData, fullPageData } from "./data";
+import { fullPageData } from "./data";
 
 export default function Notifications() {
   return (

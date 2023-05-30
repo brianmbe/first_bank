@@ -22,21 +22,20 @@ export const fullPageData = [
       {
         title: "Tips & tutorials",
         description:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minima saepe amet tempora animi nobis.",
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
         icon: <ToggleOnOutlinedIcon sx={{ color: toggleOnOutlined }} />,
       },
       {
         title: "User Research",
         description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam minima saepe amet tempora
-      animi nobis fuga error iusto molestias veniam, Totam minima saepe amet tempora 
-      animi nobis fuga error iusto molestias veniam?`,
-        icon: <toggleOnOutlined sx={{ color: toggleOnOutlined }} />,
+      animi nobis fuga error iusto molestias.`,
+        icon: <ToggleOnOutlinedIcon sx={{ color: toggleOnOutlined }} />,
       },
       {
         title: "Comments",
         description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       Totam minima saepe amet tempora animi nobis fuga error iusto molestias veniam?`,
-        icon: <toggleOffOutlined sx={{ color: toggleOffOutlined }} />,
+        icon: <ToggleOffOutlinedIcon sx={{ color: toggleOffOutlined }} />,
       },
       {
         title: "Reminders",
@@ -64,13 +63,13 @@ export const fullPageData = [
         title: "Reminders",
         description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       Totam minima saepe amet tempora animi nobis fuga error iusto molestias veniam?`,
-        icon: <toggleOnOutlined sx={{ color: toggleOnOutlined }} />,
+        icon: <ToggleOnOutlinedIcon sx={{ color: toggleOnOutlined }} />,
       },
       {
         title: "Your frequent activities",
         description: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       Totam minima saepe amet tempora animi nobis fuga error iusto molestias veniam?`,
-        icon: <toggleOffOutlined sx={{ color: toggleOffOutlined }} />,
+        icon: <ToggleOffOutlinedIcon sx={{ color: toggleOffOutlined }} />,
       },
     ],
   },
