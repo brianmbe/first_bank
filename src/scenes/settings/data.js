@@ -74,3 +74,62 @@ export const fullPageData = [
     ],
   },
 ];
+
+export const records = [
+  {
+    date: "20/04/2023",
+    type: "Digital Banking",
+    description: "DSTV",
+    paidIn: 0,
+    paidOut: 56700,
+    balance: 21000000,
+  },
+  {
+    date: "18/04/2023",
+    type: "Digital Banking",
+    description: "Netflix",
+    paidIn: 0,
+    paidOut: 56700,
+    balance: 21000000 + 56700,
+  },
+  {
+    date: "16/04/2023",
+    type: "Auto Banking",
+    description: "NSSF",
+    paidIn: 0,
+    paidOut: 56700,
+    balance: 21000000 + 56700 + 56700,
+  },
+  {
+    date: "16/04/2023",
+    type: "Faster Payment",
+    description: "Amazon",
+    paidIn: 0,
+    paidOut: 200000,
+    balance: 21000000 + 56700 + 56700 + 56700,
+  },
+  {
+    date: "16/04/2023",
+    type: "BL@21",
+    description: "Business Loan",
+    paidIn: 33000000,
+    paidOut: 0,
+    balance: 21000000 + 56700 + 56700 + 56700 + 200000,
+  },
+  {
+    date: "16/04/2023",
+    type: "School Pay",
+    description: "St. Mary's College Kisubi",
+    paidIn: 0,
+    paidOut: 2100000,
+    balance: 21000000 + 56700 + 56700 + 56700 + 200000,
+  },
+  {
+    date: "16/04/2023",
+    type: "School Pay",
+    description: "St. Mary's Kitende S.S",
+    paidIn: 0,
+    paidOut: 1700000,
+    balance: 21000000 + 56700 + 56700 + 56700 + 200000,
+  },
+];

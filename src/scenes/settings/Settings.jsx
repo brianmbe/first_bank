@@ -44,7 +44,7 @@ export default function Settings() {
           >
             <Menu
               menuItemStyles={{
-                button: ({ level, active, disabled }) => {
+                button: ({ level, active }) => {
                   if (level === 0)
                     return {
                       color: active ? "#fff" : "#000",
